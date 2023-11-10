@@ -67,6 +67,11 @@ ul {
   cursor: pointer;
 }
 
+.button:hover {
+  background-color: var(--color-primary-lith);
+  color: var(--color-barnd-dark);
+}
+
 .link {
   color: var(--color-primary-lith);
   text-decoration: none;
