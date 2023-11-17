@@ -15,5 +15,9 @@
 <path stroke-width="0.5587" stroke-miterlimit="4" stroke-linecap="butt" stroke-linejoin="miter" d="M0.279 16c0 8.682 7.038 15.721 15.721 15.721s15.721-7.038 15.721-15.721c0-8.682-7.038-15.721-15.721-15.721s-15.721 7.038-15.721 15.721z"></path>
 <path d="M23.060 15.486c0.284 0.284 0.284 0.744 0 1.029l-4.628 4.628c-0.284 0.284-0.744 0.284-1.029 0s-0.284-0.744 0-1.029l4.114-4.114-4.114-4.114c-0.284-0.284-0.284-0.744 0-1.028s0.744-0.284 1.029 0l4.628 4.628zM22.545 16.727h-12.19v-1.455h12.19v1.455z"></path>
 </symbol>
+<symbol id="icon-Close" viewBox="0 0 32 32" fill="none">
+<path d="M8 8L16 16L24 8" stroke="#31261A" stroke-width="2" stroke-linecap="round"/>
+<path d="M8 24L16 16L24 24" stroke="#31261A" stroke-width="2" stroke-linecap="round"/>
+</symbol>
 </defs>
 </svg>
