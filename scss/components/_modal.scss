@@ -1,0 +1,47 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+  transition: opacity 300ms ease-in;
+  pointer-events: none;
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(49, 38, 26, 0.4);
+}
+
+.backdrop:target {
+  opacity: 1;
+  pointer-events: auto;
+  overflow-y: auto;
+}
+
+.modal {
+  position: relative;
+  width: 80%;
+  max-width: 880px;
+  height: 880px;
+  background-color: var(--color-primary-lith);
+  border-radius: 32px;
+  padding: 128px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.close {
+  position: absolute;
+  top: 40px;
+  right: 40px;
+}
+
+.modal-bread {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}

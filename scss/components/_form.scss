@@ -1,0 +1,75 @@
+.form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-title {
+  font-size: 64px;
+  font-weight: 600;
+  line-height: normal;
+  margin-bottom: 8px;
+}
+
+.form-text {
+  margin-top: 0;
+  margin-bottom: 72px;
+  color: var(--color-barnd-dark);
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.input {
+  background-color: transparent;
+  padding: 16px 42px;
+  margin-bottom: 32px;
+  font-size: 16px;
+  line-height: 1.17;
+  width: 100%;
+  border-radius: 8px;
+  border: 1px solid var(--color-secondary-dark);
+}
+
+.input::placeholder {
+  color: var(--color-secondary-dark);
+}
+
+.input:hover,
+.input:active,
+.input:focus {
+  outline: none;
+  border-color: var(--color-brand);
+}
+
+.input:hover::placeholder {
+  color: var(--color-primary-dark);
+}
+
+.form-button {
+  color: var(--color-primary-lith);
+  border-radius: 8px;
+  border: 2px solid var(--color-brand);
+  background-color: var(--color-brand);
+  font-weight: 600;
+  padding: 16px 32px;
+  cursor: pointer;
+  margin-bottom: 24px;
+}
+
+.form-button:hover {
+  background-color: transparent;
+  color: var(--color-brand);
+}
+
+.form-desc,
+.form-desc-link {
+  font-size: 12px;
+  font-weight: 500;
+  margin: 0;
+}
+
+.form-desc-link {
+  text-underline-offset: 2px;
+  color: var(--color-primary-dark);
+}
