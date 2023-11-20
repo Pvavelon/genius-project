@@ -1,34 +1,33 @@
 .contact-section {
   padding-bottom: 96px;
-}
 
-.contact-container {
-  display: flex;
-  gap: 32px;
-}
+  &__container {
+    display: flex;
+    gap: 32px;
+  }
 
-.contact-title {
-  margin-bottom: 16px;
-}
+  &__title {
+    margin-bottom: 16px;
+  }
 
-.contact-text {
-  margin-top: 0;
-  margin-bottom: 42px;
-  color: var(--color-barnd-dark);
-  font-size: 18px;
-  font-weight: 400;
-}
+  &__text {
+    margin-top: 0;
+    margin-bottom: 42px;
+    font-size: 18px;
+    font-weight: 400;
+  }
 
-.contact-form .input {
-  margin-bottom: 24px;
-}
+  &__form .input {
+    margin-bottom: 24px;
+  }
 
-.contact-form .form-button {
-  margin-bottom: 16px;
-}
+  &__form .form-button {
+    margin-bottom: 16px;
+  }
 
-.contact-map {
-  flex-shrink: 0;
-  border: none;
-  border-radius: 16px;
+  &__map {
+    flex-shrink: 0;
+    border: none;
+    border-radius: 16px;
+  }
 }
