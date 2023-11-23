@@ -11,11 +11,26 @@
   }
   &__title {
     margin-bottom: 42px;
+
+    @media screen and (max-width: $bp-desktop) {
+      font-size: 32px;
+      margin-bottom: 24px;
+    }
   }
   &__image {
     border-radius: 400px 400px 0px 0px;
+
+    @media screen and (max-width: $bp-tablet) {
+      display: none;
+    }
   }
   .limited {
-  max-width: 360px;
-}
+    max-width: 360px;
+    margin-bottom: 0;
+  }
+
+  @media screen and (max-width: $bp-desktop) {
+    padding-top: 40px;
+    padding-bottom: 0;
+  }
 }

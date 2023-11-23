@@ -1,13 +1,29 @@
 .contact-section {
   padding-bottom: 96px;
 
+  @media screen and (max-width: $bp-desktop) {
+    padding-bottom: 40px;
+  }
+
+  @media screen and (max-width: $bp-tablet) {
+    padding-bottom: 0;
+  }
+
   &__container {
     display: flex;
     gap: 32px;
+
+    @media screen and (max-width: $bp-tablet) {
+      flex-direction: column;
+    }
   }
 
   &__title {
     margin-bottom: 16px;
+
+    @media screen and (max-width: $bp-desktop) {
+      padding-bottom: 8px;
+    }
   }
 
   &__text {
@@ -15,19 +31,47 @@
     margin-bottom: 42px;
     font-size: 18px;
     font-weight: 400;
+
+    @media screen and (max-width: $bp-desktop) {
+      margin-bottom: 24px;
+      font-size: 14px;
+      font-weight: 300;
+    }
   }
 
   &__form .input {
     margin-bottom: 24px;
+
+    @media screen and (max-width: $bp-desktop) {
+      margin-bottom: 16px;
+    }
+
+    @media screen and (max-width: $bp-tablet) {
+      padding: 8px 24px;
+    }
   }
 
   &__form .form-button {
     margin-bottom: 16px;
+
+    @media screen and (max-width: $bp-tablet) {
+      padding: 16px 24px;
+    }
   }
 
   &__map {
     flex-shrink: 0;
-    border: none;
+    width: 603px;
+    height: 595px;
     border-radius: 16px;
+    @media screen and (max-width: $bp-desktop) {
+      flex-shrink: 1;
+    }
+    @media screen and (max-width: $bp-tablet) {
+      height: 176px;
+      width: auto;
+      margin: 0 -24px;
+      border-radius: 0;
+    }
   }
 }

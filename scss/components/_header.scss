@@ -4,6 +4,10 @@
   left: 0;
   width: 100%;
 
+  @media screen and (max-width: $bp-desktop) {
+      top: 16px;
+  }
+
   &__container {
     display: flex;
     align-items: center;
@@ -20,5 +24,28 @@
     gap: 64px;
     flex-grow: 1;
     justify-content: center;
+
+    @media screen and (max-width: $bp-desktop) {
+      display: none;
+    }
+  }
+  &__button {
+    @media screen and (max-width: $bp-desktop) {
+      display: none;
+    }
+  }
+
+  &__burger {
+    display: none;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    fill: var(--color-primary-lith);
+    padding: 0;
+
+    @media screen and (max-width: $bp-desktop) {
+      display:block;
+  }
+    
   }
 }

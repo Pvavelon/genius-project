@@ -2,14 +2,35 @@
   padding: 16px 0;
   background-color: var(--color-brand);
 
+  @media screen and (max-width: $bp-desktop) {
+    padding-top: 40px;
+    padding-bottom: 0;
+    background-color: var(--color-primary-lith);
+  }
+
   &__list {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     gap: 40px;
+
+    @media screen and (max-width: $bp-desktop) {
+      background-color: var(--color-adven-grey);
+      border-radius: 24px;
+      padding: 24px 40px;
+      color: var(--color-primary-dark);
+      flex-direction: column;
+      gap: 16px;
+    }
   }
   &__item {
     color: var(--color-primary-lith);
     font-size: 20px;
     font-weight: 300;
+
+    @media screen and (max-width: $bp-desktop) {
+      color: var(--color-primary-dark);
+      font-size: 14px;
+    }
   }
 }

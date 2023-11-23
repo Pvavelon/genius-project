@@ -4,6 +4,11 @@
     margin-bottom: 80px;
     position: relative;
 
+    @media screen and (max-width: $bp-desktop) {
+      font-size: 32px;
+      margin-bottom: 24px;
+    }
+
     &::after,
     &::before {
       position: absolute;
@@ -13,6 +18,10 @@
       height: 2px;
       background: #cfcfbc;
       content: '';
+
+      @media screen and (max-width: $bp-desktop) {
+        display: none;
+      }
     }
 
     &::before {
@@ -23,11 +32,16 @@
       right: 0;
     }
   }
-  
+
   &__list {
     display: flex;
     flex-wrap: wrap;
     gap: 40px 30px;
+
+    @media screen and (max-width: $bp-desktop) {
+      gap: 20px;
+      flex-direction: column;
+    }
   }
 
   &__item {
